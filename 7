@@ -1,7 +1,7 @@
 ###########DESTIO WAHYU#######################
+###########https://raw.githubusercontent.com/AqFad2811/epg/refs/heads/main/indonesia.xml
 
-
-#EXTM3U billed-msg="IP TV - Destio", url-tvg="https://raw.githubusercontent.com/AqFad2811/epg/refs/heads/main/indonesia.xml" refresh="3600"
+#EXTM3U billed-msg="IP TV - Destio", url-tvg="https://s.urfan.id/epg" refresh="3600"
 
 
 
@@ -119,12 +119,14 @@ https://s.urfan.id/sctv
 #EXTVLCOPT:http-referrer=https://www.indihometv.com
 https://streaming.indihometv.com/atm/DASH/sctv/manifest.mpd
 
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/destiowahyu/tvlogo/main/sctv.png" group-title="Nasional", SCTV 5 (HD)
-#KODIPROP:inputstreamaddon=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.stream_headers=user-agent=Xstream XGO/1.22 (Linux;Android 9) ExoPlayerLib/2.10.5
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/destiowahyu/tvlogo/main/sctv.png" group-title="Nasional",SCTV 5 (HD)
+#KODIPROP:inputstreamaddon=inputstream.adaptive 
+#EXTHTTP:{"dt-custom-data":"eyJ1c2VySWQiOiJyZWFjdC1qdy1wbGF5ZXIiLCJzZXNzaW9uSWQiOiIxMjM0NTY3ODkiLCJtZXJjaGFudCI6ImdpaXRkX3RyYW5zdmlzaW9uIn0="}
+#KODIPROP:inputstream.adaptive.manifest_type=dash
 #KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
-#KODIPROP:inputstream.adaptive.license_key=https://trans.androidteve.workers.dev/pukgeruk
-https://cdnjkt4.transvision.co.id:1000/live/master/4/4028c6856c3db2cc016cd6e647532391/manifest.mpd
+#KODIPROP:inputstream.adaptive.license_key=https://cubum.iptvgo.workers.dev/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+https://cdnjkt4.transvision.co.id:1000/live/master/2/4028c6856c3db2cc016cd6e647532391/manifest.mpd
 
 #EXTINF:-1 group-title="Nasional" tvg-id="indosiar.id" tvg-logo="https://raw.githubusercontent.com/destiowahyu/tvlogo/main/indosiar.png",Indosiar 1 (SD)
 #EXTVLCOPT:http-user-agent=DENSGO/3.00.00 (Linux;Android 15.0.0;) ExoPlayerLib/2.19.1
@@ -144,7 +146,7 @@ https://atemecdnbalancer-voe.sysln.id/live/eds/IndosiarHD/mpd/IndosiarHD.mpd
 #KODIPROP:inputstream.ffmpegdirect.is_realtime_stream=true
 #KODIPROP:inputstream.ffmpegdirect.stream_mode=timeshift
 #KODIPROP:inputstream.ffmpegdirect.manifest_type=ts
-#EXTINF:-1 tvg-id="Indosiar - [Channel 78].id" tvg-url="https://www.bevy.be/bevyfiles/indonesia.xml" tvg-logo="https://raw.githubusercontent.com/destiowahyu/tvlogo/main/indosiar.png" group-title="Nasional",Indosiar 3 (FHD)
+#EXTINF:-1 tvg-id="Indosiar - [Channel 78].id" tvg-url="https://www.bevy.be/bevyfiles/indonesia.xml" tvg-logo="https://raw.githubusercontent.com/destiowahyu/tvlogo/main/indosiar.png" group-title="Nasional",Indosiar 3 (SD)
 http://xtv.ooo:8080/live/83212539/43153928/350972.ts
 http://myteve.online:8080/GenIptv2023/XkgMCdR7PJzShK5m/162138
 https://v.af/visionples-indosiar
@@ -165,9 +167,15 @@ http://op-group1-swiftservehd-1.dens.tv/h/h207/02.m3u8
 #EXTVLCOPT:http-user-agent=FirstMediaX/3.46.2 (Linux;Android 15.0.0;) ExoPlayerLib/2.19.1
 https://s.urfan.id/moji
 
-#EXTINF:-1 group-title="Nasional" tvg-id="OChannel.id" tvg-logo="https://raw.githubusercontent.com/destiowahyu/tvlogo/main/moji.png",Moji 3 HD
-#EXTVLCOPT:http-user-agent=IndiHomeTV/8.7.12 (Linux;Android 15.0.0;) ExoPlayerLib/2.19.1
-https://cdn08jtedge.indihometv.com/dassdvr/134/ochannel/manifest.mpd
+#KODIPROP:inputstream=inputstream.ffmpegdirect
+#KODIPROP:mimetype=video/mp2t
+#KODIPROP:inputstream.ffmpegdirect.is_realtime_stream=true
+#KODIPROP:inputstream.ffmpegdirect.stream_mode=timeshift
+#KODIPROP:inputstream.ffmpegdirect.manifest_type=ts
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/destiowahyu/tvlogo/main/moji.png" group-title="Nasional",Moji 3 (HD)
+http://xtv.ooo:8080/live/0966717777/0966717777/350997.ts
+http://iptvtree.net:8080/Luctv2024/c6b6031eb1/298550
+#http://myteve.online:8080/live/GenIptv2023/XkgMCdR7PJzShK5m/298550.ts
 
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/destiowahyu/tvlogo/main/mentaritv.png" group-title="Nasional",Mentari TV 1 (HD)
 https://cdn08jtedge.indihometv.com/dassdvr/134/mentaritv/manifest.mpd
@@ -340,13 +348,6 @@ https://cempedak-live-cdn.mncnow.id/live/eds/Metro-TV2/sa_dash_vmx/Metro-TV2.mpd
 #EXTVLCOPT:http-user-agent=YouTV/1.7.16-prod.release+8ec73a15 (Linux;Android 15.0.0;) ExoPlayerLib/2.19.1
 https://flv.intechmedia.net/live/ch111.m3u8
 
-#EXTINF:-1 group-title="Nasional" tvg-id="bnchannel.id" tvg-logo="https://iptv.urfan.web.id/logo/bn.png",BN Channel
-#EXTVLCOPT:http-user-agent=YouTV/1.7.16-prod.release+8ec73a15 (Linux;Android 15.0.0;) ExoPlayerLib/2.19.1
-https://flv.intechmedia.net/live/ch112.m3u8
-
-#EXTINF:-1 group-title="Nasional" tvg-id="metroglobenetwork.id" tvg-logo="https://iptv.urfan.web.id/logo/mgn.png",Metro Globe Network
-#EXTVLCOPT:http-user-agent=MNCNow/6.33.3 (Linux;Android 15.0.0;) ExoPlayerLib/2.19.1
-https://edge.medcom.id/live-edge/smil:mgnch.smil/playlist.m3u8
 
 
 
@@ -557,26 +558,6 @@ https://cdn08jtedge.indihometv.com/dassdvr/194/maxstream/manifest.mpd
 #EXTINF:-1 group-title="Nasional" tvg-id="seatoday.id" tvg-logo="https://iptv.urfan.id/logo/seatoday.png",SEA TODAY
 #EXTVLCOPT:http-user-agent=OTTNavigator/1.7.0.2.4 (Linux;Android 15.0.0;) ExoPlayerLib/2.19.1
 https://hls.seatoday.com/hls_hd/seatoday.m3u8
-
-#EXTINF:-1 group-title="Nasional" tvg-id="iptv.urfan.id" tvg-logo="https://iptv.urfan.id/logo/info.png",iptv.urfan.id
-#EXTVLCOPT:http-user-agent=OTTNavigator/1.7.0.2.4 (Linux;Android 15.0.0;) ExoPlayerLib/2.19.1
-https://iptv.urfan.id/video/info.m3u8
-
-#EXTINF:-1 group-title="Nasional" tvg-id="iptv.urfan.id" tvg-logo="https://iptv.urfan.id/logo/info.png",Playlist Ini Gratis
-#EXTVLCOPT:http-user-agent=OTTNavigator/1.7.0.2.4 (Linux;Android 15.0.0;) ExoPlayerLib/2.19.1
-https://iptv.urfan.id/video/info.m3u8
-
-#EXTINF:-1 group-title="Nasional" tvg-id="iptv.urfan.id" tvg-logo="https://iptv.urfan.id/logo/info.png",Playlist Ini Tanpa Donasi
-#EXTVLCOPT:http-user-agent=OTTNavigator/1.7.0.2.4 (Linux;Android 15.0.0;) ExoPlayerLib/2.19.1
-https://iptv.urfan.id/video/info.m3u8
-
-#EXTINF:-1 group-title="Nasional" tvg-id="iptv.urfan.id" tvg-logo="https://iptv.urfan.id/logo/info.png",Tidak Boleh Diperjualbelikan
-#EXTVLCOPT:http-user-agent=OTTNavigator/1.7.0.2.4 (Linux;Android 15.0.0;) ExoPlayerLib/2.19.1
-https://iptv.urfan.id/video/info.m3u8
-
-#EXTINF:-1 group-title="Nasional" tvg-id="iptv.urfan.id" tvg-logo="https://iptv.urfan.id/logo/info.png",Tidak Boleh Dibundling Untuk Jualan
-#EXTVLCOPT:http-user-agent=OTTNavigator/1.7.0.2.4 (Linux;Android 15.0.0;) ExoPlayerLib/2.19.1
-https://iptv.urfan.id/video/info.m3u8
 
 
 ########################
@@ -2811,4 +2792,4 @@ https://iptv.urfan.id/video/info.m3u8
 
 
 
-#EXTM3U billed-msg="DESTIO WAHYU - PLAYLIST", url-tvg="https://raw.githubusercontent.com/AqFad2811/epg/refs/heads/main/indonesia.xml" refresh="3600"
+#EXTM3U billed-msg="DESTIO WAHYU - PLAYLIST", url-tvg="https://s.urfan.id/epg" refresh="3600"
